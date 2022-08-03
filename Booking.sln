@@ -3,9 +3,52 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32127.271
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9F42ADDF-5EAE-45AF-AF55-D3FA3E8554EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{6CF60A57-5143-438F-9AF2-04856962C3F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D7F9AF8C-5B22-432B-8415-F34E661C92A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{7647CE1D-CA0C-4CE5-8C72-CADA35279527}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{CABFFDEE-AA15-4C5A-B592-7EF2B1EA5602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Application", "Booking.Application\Booking.Application.csproj", "{81215390-3154-46B7-8FB6-71587FA42A3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Domain", "Booking.Domain\Booking.Domain.csproj", "{306BB331-871A-4E41-A9D1-D3134C9824E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Infrastructure", "Booking.Infrastructure\Booking.Infrastructure.csproj", "{3183DC4D-0FF1-4365-89DF-6A182FAACBBB}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81215390-3154-46B7-8FB6-71587FA42A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81215390-3154-46B7-8FB6-71587FA42A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81215390-3154-46B7-8FB6-71587FA42A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81215390-3154-46B7-8FB6-71587FA42A3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306BB331-871A-4E41-A9D1-D3134C9824E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306BB331-871A-4E41-A9D1-D3134C9824E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306BB331-871A-4E41-A9D1-D3134C9824E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306BB331-871A-4E41-A9D1-D3134C9824E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3183DC4D-0FF1-4365-89DF-6A182FAACBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3183DC4D-0FF1-4365-89DF-6A182FAACBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3183DC4D-0FF1-4365-89DF-6A182FAACBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3183DC4D-0FF1-4365-89DF-6A182FAACBBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6CF60A57-5143-438F-9AF2-04856962C3F8} = {9F42ADDF-5EAE-45AF-AF55-D3FA3E8554EB}
+		{D7F9AF8C-5B22-432B-8415-F34E661C92A2} = {9F42ADDF-5EAE-45AF-AF55-D3FA3E8554EB}
+		{7647CE1D-CA0C-4CE5-8C72-CADA35279527} = {9F42ADDF-5EAE-45AF-AF55-D3FA3E8554EB}
+		{CABFFDEE-AA15-4C5A-B592-7EF2B1EA5602} = {9F42ADDF-5EAE-45AF-AF55-D3FA3E8554EB}
+		{81215390-3154-46B7-8FB6-71587FA42A3F} = {6CF60A57-5143-438F-9AF2-04856962C3F8}
+		{306BB331-871A-4E41-A9D1-D3134C9824E8} = {D7F9AF8C-5B22-432B-8415-F34E661C92A2}
+		{3183DC4D-0FF1-4365-89DF-6A182FAACBBB} = {7647CE1D-CA0C-4CE5-8C72-CADA35279527}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {581EC212-B134-40FC-AC9A-85A546350E02}
