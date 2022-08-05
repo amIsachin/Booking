@@ -13,11 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{CABFFDEE-AA15-4C5A-B592-7EF2B1EA5602}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Application", "Booking.Application\Booking.Application.csproj", "{81215390-3154-46B7-8FB6-71587FA42A3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Application", "Booking.Application\Booking.Application.csproj", "{81215390-3154-46B7-8FB6-71587FA42A3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Domain", "Booking.Domain\Booking.Domain.csproj", "{306BB331-871A-4E41-A9D1-D3134C9824E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Domain", "Booking.Domain\Booking.Domain.csproj", "{306BB331-871A-4E41-A9D1-D3134C9824E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Infrastructure", "Booking.Infrastructure\Booking.Infrastructure.csproj", "{3183DC4D-0FF1-4365-89DF-6A182FAACBBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Infrastructure", "Booking.Infrastructure\Booking.Infrastructure.csproj", "{3183DC4D-0FF1-4365-89DF-6A182FAACBBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
