@@ -1,5 +1,0 @@
-E:\Sachin\Application\Booking\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
-E:\Sachin\Application\Booking\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
-E:\Sachin\Application\Booking\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
-E:\Sachin\Application\Booking\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
-E:\Sachin\Application\Booking\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
