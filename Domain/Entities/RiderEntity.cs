@@ -2,7 +2,7 @@
 
 namespace Domain.Entities
 {
-    internal class DriverEntity : AuditableBaseEntity
+    internal class RiderEntity : AuditableBaseEntity
     {
     }
 }
