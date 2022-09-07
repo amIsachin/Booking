@@ -1,5 +1,5 @@
 
-<--  Module 1 Define entities And generate database
+<--  Module 1 Define entities And generate database  --> 1 August 2022
 
      1. Please understand *Domain layer     <-- Next task Please learn.  Date: 11/8/2022
 
@@ -10,5 +10,7 @@
      4. Please learn *DataTypes <-- Next task please learn. Date: 23/8/2022
 
      5. Please learn *Properties And prepare performa for only Entities not relationship in between entities .  <-- Next task please learn.  Date: 25/8/2022
+
+     6. 
 
 -->

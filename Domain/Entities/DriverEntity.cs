@@ -2,7 +2,14 @@
 
 namespace Domain.Entities
 {
-    internal class DriverEntity : AuditableBaseEntity
+    internal sealed class DriverEntity : AuditableBaseEntity
     {
+        public uint ID { get; set; }
+        public string Name { get; set; }
+        public string Gender { get; set; }
+        public byte Age { get; set; }
+        public string City { get; set; }
+        public string ImageUrl { get; set; }
+        public string DrivingLicence { get; set; }
     }
 }
