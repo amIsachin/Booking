@@ -2,7 +2,10 @@
 
 namespace Domain.Entities
 {
-    internal class RiderEntity : AuditableBaseEntity
+    internal sealed class RiderEntity : AuditableBaseEntity
     {
+        public uint ID { get; set; }
+        public string Name { get; set; }
+        public string Gender { get; set; }
     }
 }

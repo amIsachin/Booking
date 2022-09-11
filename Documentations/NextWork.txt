@@ -11,6 +11,6 @@
 
      5. Please learn *Properties And prepare performa for only Entities not relationship in between entities .  <-- Next task please learn.  Date: 25/8/2022
 
-     6. 
+     6. Please learn *Sealed class. <-- Next task please learn. Date: 7/9/2022
 
 -->
