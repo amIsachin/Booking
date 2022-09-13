@@ -11,6 +11,10 @@
 
      5. Please learn *Properties And prepare performa for only Entities not relationship in between entities .  <-- Next task please learn.  Date: 25/8/2022
 
-     6. Please learn *Sealed class. <-- Next task please learn. Date: 7/9/2022
+     6. Please learn *Sealed class. <-- Next task please learn. Date: 7/9/2022.
+
+     7. Please learn *1NF to 3NF (Normal form)  <-- Next task plearn. Date: 11/9/2022.
+     
+     8. Plearn learn *(E-R diagram) And find the relation like *(1-1, 1-M, M-1, M-M) in between Driver and Rider.  <-- Next task plearn learn. Date: 13/9/2022
 
 -->
