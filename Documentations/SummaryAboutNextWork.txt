@@ -1,0 +1,7 @@
+
+<--  Module 1 Define entities And generate database  --> 1 August 2022
+     
+     8. I draw the E-R diagram and i found *(Driver and Rider has many to many relation for my point of view)  <-- Date: 15/9/2022
+	And I will implement *(M to M) relation, so i hope this relation work successfully.
+
+-->
