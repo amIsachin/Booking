@@ -1,8 +1,8 @@
 ﻿using Domain.Common;
 
-namespace Domain.Entities
+namespace Domain.Entities.SystemEntities
 {
-    internal sealed class DriverEntity : AuditableBaseEntity
+    public sealed class DriverSystemEntity : AuditableBaseEntity
     {
         public uint Driver_ID { get; set; }
         public string Name { get; set; }

@@ -1,8 +1,8 @@
 ﻿using Domain.Common;
 
-namespace Domain.Entities
+namespace Domain.Entities.SystemEntities
 {
-    internal sealed class RiderEntity : AuditableBaseEntity
+    public sealed class RiderSystemEntity : AuditableBaseEntity
     {
         public uint Rider_ID { get; set; }
         public string Name { get; set; }
