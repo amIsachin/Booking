@@ -1,7 +1,8 @@
 ﻿namespace Domain.Entities.SystemEntities
 {
-    internal class DriverDropedRiderSystemEntity
+    public sealed class DriverDropedRiderSystemEntity
     {
+        [System.ComponentModel.DataAnnotations.Key]
         public uint Droped_ID { get; set; }
         public uint DriverID { get; set; }
         public uint RiderID { get; set; }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain.Common
+namespace Domain.Common.CommonEntities
 {
     /// <summary>
     /// This *(abstract class) is use only *(system entities).
