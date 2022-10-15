@@ -26,7 +26,6 @@ namespace Booking.Web
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("BookingConnection"), assemply => 
             assemply.MigrationsAssembly("Booking.Web")));
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
