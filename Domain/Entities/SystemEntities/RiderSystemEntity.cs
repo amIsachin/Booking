@@ -9,6 +9,6 @@ namespace Domain.Entities.SystemEntities
         [Key]
         public uint Rider_ID { get; set; }
 
-        public ICollection<DriverDropedRiderSystemEntity> Droped { get; set; }
+        public ICollection<DriverDropedRiderSystemEntity> DriverDropedRiderSystemEntity { get; set; }
     }
 }

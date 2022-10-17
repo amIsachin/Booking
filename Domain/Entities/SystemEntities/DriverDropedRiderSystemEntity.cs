@@ -7,7 +7,7 @@
         public uint DriverID { get; set; }
         public uint RiderID { get; set; }
 
-        public DriverSystemEntity DriverSystemEntity { get; set; }
-        public RiderSystemEntity RiderSystemEntity { get; set; }
+        public DriverSystemEntity Driver { get; set; }
+        public RiderSystemEntity Rider { get; set; }
     }
 }

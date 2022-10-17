@@ -4,14 +4,16 @@ using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Booking.Web.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221017075536_fixFirst")]
+    partial class fixFirst
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,14 +31,20 @@ namespace Booking.Web.Migrations
                     b.Property<long>("DriverID")
                         .HasColumnType("bigint");
 
+                    b.Property<long?>("DriverSystemEntityDriver_ID")
+                        .HasColumnType("bigint");
+
                     b.Property<long>("RiderID")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("RiderSystemEntityRider_ID")
                         .HasColumnType("bigint");
 
                     b.HasKey("Droped_ID");
 
-                    b.HasIndex("DriverID");
+                    b.HasIndex("DriverSystemEntityDriver_ID");
 
-                    b.HasIndex("RiderID");
+                    b.HasIndex("RiderSystemEntityRider_ID");
 
                     b.ToTable("Droped");
                 });
@@ -127,21 +135,13 @@ namespace Booking.Web.Migrations
 
             modelBuilder.Entity("Domain.Entities.SystemEntities.DriverDropedRiderSystemEntity", b =>
                 {
-                    b.HasOne("Domain.Entities.SystemEntities.DriverSystemEntity", "Driver")
+                    b.HasOne("Domain.Entities.SystemEntities.DriverSystemEntity", null)
                         .WithMany("DriverDropedRiderSystemEntity")
-                        .HasForeignKey("DriverID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DriverSystemEntityDriver_ID");
 
-                    b.HasOne("Domain.Entities.SystemEntities.RiderSystemEntity", "Rider")
+                    b.HasOne("Domain.Entities.SystemEntities.RiderSystemEntity", null)
                         .WithMany("DriverDropedRiderSystemEntity")
-                        .HasForeignKey("RiderID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Driver");
-
-                    b.Navigation("Rider");
+                        .HasForeignKey("RiderSystemEntityRider_ID");
                 });
 
             modelBuilder.Entity("Domain.Entities.SystemEntities.DriverSystemEntity", b =>

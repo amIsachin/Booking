@@ -11,6 +11,6 @@ namespace Domain.Entities.SystemEntities
         public byte Age { get; set; }
         public string DrivingLicence { get; set; }
 
-        public ICollection<DriverDropedRiderSystemEntity> Droped { get; set; }
+        public ICollection<DriverDropedRiderSystemEntity> DriverDropedRiderSystemEntity { get; set; }
     }
 }
