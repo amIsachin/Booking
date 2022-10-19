@@ -20,5 +20,9 @@
      9. Please learn *(Infrastructure Layer). <-- Next task plearn learn. Date: 23/9/2022
 
      10. Please learn *(Method hiding and method overriding).  <-- Next task please laern. Date: 27/9/2022.
+-->
 
+
+<--  Module 2 Design presentation layer  --> 19 October 2022
+     1. Learn bootstrap quickly and bacics of css quicky.   <-- Next task please learn.  Date: 19/20/2022.
 -->
