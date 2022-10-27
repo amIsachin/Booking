@@ -25,4 +25,6 @@
 
 <--  Module 2 Design presentation layer  --> 19 October 2022
      1. Learn bootstrap quickly and bacics of css quicky.   <-- Next task please learn.  Date: 19/20/2022.
+
+     2. Learn bootstrap carousel. <-- Next task please learn.  Date: 27/20/2022.
 -->
