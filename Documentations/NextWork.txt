@@ -27,4 +27,6 @@
      1. Learn bootstrap quickly and bacics of css quicky.   <-- Next task please learn.  Date: 19/20/2022.
 
      2. Learn bootstrap carousel. <-- Next task please learn.  Date: 27/20/2022.
+
+     3. Learn bootstrap cards. <-- Next task please learn.  Date: 29/20/2022.
 -->
