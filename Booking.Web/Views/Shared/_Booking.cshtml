@@ -1,0 +1,85 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <title>_Booking</title>
+</head>
+<body>
+    <!--  ----------------------- navigation -------------------------/
+    ----  ------------------------------------------------------------------------------>
+    <div class="container mb-5">
+        <nav class="navbar navbar-expand-sm fixed-top bg-primary border-bottom box-shadow p-1">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand text-white">Riders</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="myNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Contact us</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!--  ----------------------- footer section -------------------------/
+    ----  ------------------------------------------------------------------------------>
+    <div class="">
+      <footer class="navbar navbar-expand-sm bg-dark p-1">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand" style="padding-top: 2rem;">
+            <figcaption class="blockquote-footer">
+              <cite title="Source Title"><strong>Mr. Rider</strong></cite>
+            </figcaption>
+          </a>
+
+          <div>
+            <ul class="navbar-nav me-auto" style="padding: 1rem 0;">
+              <li class="nav-item"><a href="#" class="nav-link text-white">Testimonials</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white">Terms of Use</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white">© -Mr. Riders 2022</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
