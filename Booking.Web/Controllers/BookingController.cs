@@ -8,5 +8,10 @@ namespace Booking.Web.Controllers
         {
             return View();
         }
+
+        public IActionResult BooKingNow()
+        {
+            return View();
+        }
     }
 }
