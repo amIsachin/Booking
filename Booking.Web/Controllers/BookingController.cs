@@ -9,7 +9,12 @@ namespace Booking.Web.Controllers
             return View();
         }
 
-        public IActionResult BooKingNow()
+        public IActionResult BookingCityTaxi()
+        {
+            return View();
+        }
+
+        public IActionResult BooKingRentals()
         {
             return View();
         }
