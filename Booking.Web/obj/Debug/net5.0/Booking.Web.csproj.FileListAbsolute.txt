@@ -154,3 +154,5 @@ E:\Sachin\Application\Booking\Booking.Web\obj\Debug\net5.0\Razor\Views\Booking\I
 E:\Sachin\Application\Booking\Booking.Web\obj\Debug\net5.0\Razor\Views\Shared\_Booking.cshtml.g.cs
 E:\Sachin\Application\Booking\Booking.Web\obj\Debug\net5.0\Razor\Views\Booking\BookingCityTaxi.cshtml.g.cs
 E:\Sachin\Application\Booking\Booking.Web\obj\Debug\net5.0\Razor\Views\Booking\BooKingRentals.cshtml.g.cs
+E:\Sachin\Application\Booking\Booking.Web\obj\Debug\net5.0\Razor\Views\Driver\Index.cshtml.g.cs
+E:\Sachin\Application\Booking\Booking.Web\obj\Debug\net5.0\Razor\Views\Shared\_Driver.cshtml.g.cs
