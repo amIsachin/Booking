@@ -8,5 +8,7 @@ namespace Booking.Web.Controllers
         {
             return View();
         }
+
+
     }
 }
