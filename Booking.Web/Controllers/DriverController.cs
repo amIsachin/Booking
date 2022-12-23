@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Domain.Entities.Global_Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Booking.Web.Controllers
 {
@@ -11,17 +12,15 @@ namespace Booking.Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create(int a)
+        public IActionResult Registration()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Create()
+        public IActionResult Registration(DriverGlobalEntity driverGlobalEntity)
         {
             return View();
         }
-
-
     }
 }

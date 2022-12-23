@@ -2,7 +2,7 @@
 {
     /// <summary>
     /// This entity is system entity please dont use for global application.
-    /// this Enitty use only main service which store data in the database. not any other service.
+    /// this Enitty use only main service which store data in the database. not any other services.
     /// </summary>
     public sealed class DriverDropedRiderSystemEntity
     {
