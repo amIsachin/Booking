@@ -20,6 +20,8 @@
      9. Please learn *(Infrastructure Layer). <-- Next task plearn learn. Date: 23/9/2022
 
      10. Please learn *(Method hiding and method overriding).  <-- Next task please laern. Date: 27/9/2022.
+
+     11. Please learn *(Single ton design pattern) <-- Next task please laern. Date: 28/12/2022.
 -->
 
 
@@ -30,3 +32,6 @@
 
      3. Learn bootstrap cards. <-- Next task please learn.  Date: 29/20/2022.
 -->
+
+
+
