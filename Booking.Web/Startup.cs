@@ -1,3 +1,5 @@
+using Application.Common.Interfaces.Driver;
+using Application.Drivers.Commands.CreateDriver;
 using Infrastructure.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,6 +28,9 @@ namespace Booking.Web
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("BookingConnection"), assemply => 
             assemply.MigrationsAssembly("Booking.Web")));
+
+            // Dependency injection.
+            services.AddScoped<ICreateDriverCommand, CreateDriverCommand>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

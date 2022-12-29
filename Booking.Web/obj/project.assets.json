@@ -2546,6 +2546,16 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7798,6 +7808,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -7811,6 +7826,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Application >= 1.0.0",
       "Infrastructure >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0",
@@ -7846,6 +7862,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "E:\\Sachin\\Application\\Booking\\Application\\Application.csproj": {
+              "projectPath": "E:\\Sachin\\Application\\Booking\\Application\\Application.csproj"
+            },
             "E:\\Sachin\\Application\\Booking\\Infrastructure\\Infrastructure.csproj": {
               "projectPath": "E:\\Sachin\\Application\\Booking\\Infrastructure\\Infrastructure.csproj"
             }

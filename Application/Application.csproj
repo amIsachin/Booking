@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Common\Interfaces\" />
-    <Folder Include="Drivers\Commands\" />
+    <Folder Include="Drivers\Commands\DeleteDriver\" />
+    <Folder Include="Drivers\Commands\UpdateDriver\" />
     <Folder Include="Drivers\Queries\" />
     <Folder Include="Riders\Commands\" />
     <Folder Include="Riders\Queries\" />

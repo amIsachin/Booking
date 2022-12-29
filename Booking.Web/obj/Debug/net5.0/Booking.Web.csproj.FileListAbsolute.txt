@@ -157,3 +157,5 @@ E:\Sachin\Application\Booking\Booking.Web\obj\Debug\net5.0\Razor\Views\Booking\B
 E:\Sachin\Application\Booking\Booking.Web\obj\Debug\net5.0\Razor\Views\Driver\Index.cshtml.g.cs
 E:\Sachin\Application\Booking\Booking.Web\obj\Debug\net5.0\Razor\Views\Shared\_Driver.cshtml.g.cs
 E:\Sachin\Application\Booking\Booking.Web\obj\Debug\net5.0\Razor\Views\Driver\Registration.cshtml.g.cs
+E:\Sachin\Application\Booking\Booking.Web\bin\Debug\net5.0\Application.dll
+E:\Sachin\Application\Booking\Booking.Web\bin\Debug\net5.0\Application.pdb
