@@ -10,3 +10,8 @@ E:\Sachin\Application\Booking\Application\obj\Debug\net5.0\Application.dll
 E:\Sachin\Application\Booking\Application\obj\Debug\net5.0\refint\Application.dll
 E:\Sachin\Application\Booking\Application\obj\Debug\net5.0\Application.pdb
 E:\Sachin\Application\Booking\Application\obj\Debug\net5.0\ref\Application.dll
+E:\Sachin\Application\Booking\Application\bin\Debug\net5.0\Domain.dll
+E:\Sachin\Application\Booking\Application\bin\Debug\net5.0\Infrastructure.dll
+E:\Sachin\Application\Booking\Application\bin\Debug\net5.0\Domain.pdb
+E:\Sachin\Application\Booking\Application\bin\Debug\net5.0\Infrastructure.pdb
+E:\Sachin\Application\Booking\Application\obj\Debug\net5.0\Application.csproj.CopyComplete

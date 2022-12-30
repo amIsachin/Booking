@@ -27,7 +27,14 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\Sachin\\Application\\Booking\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\Sachin\\Application\\Booking\\Domain\\Domain.csproj"
+              },
+              "E:\\Sachin\\Application\\Booking\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "E:\\Sachin\\Application\\Booking\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
