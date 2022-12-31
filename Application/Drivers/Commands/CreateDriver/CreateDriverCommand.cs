@@ -9,10 +9,10 @@ namespace Application.Drivers.Commands.CreateDriver
     /// </summary>
     public sealed class CreateDriverCommand : ICreateDriverCommand
     {
-        private readonly ApplicationDbContext _driverService;
+        private readonly ApplicationDbContext _driverCommand;
         public CreateDriverCommand(ApplicationDbContext driverService)
         {
-            this._driverService = driverService;
+            this._driverCommand = driverService;
         }
 
         public int InsertDriver(DriverSystemEntity driverSystemEntity)
