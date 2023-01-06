@@ -5,11 +5,12 @@ namespace Application.Drivers.Commands.CreateDriver
 {
     public class CreateDriverService
     {
-        private readonly ApplicationDbContext _driverService;
-        private CreateDriverCommand _driverCommand;
-        public CreateDriverService(ApplicationDbContext _driverService)
+        private readonly CreateDriverCommand _driverCommand;
+        private readonly ApplicationDbContext _context;
+        public CreateDriverService(CreateDriverCommand driverCommand, ApplicationDbContext context)
         {
-            this._driverCommand = new CreateDriverCommand(_driverService);
+            _context = context;
+            this._driverCommand = new CreateDriverCommand(_context);
         }
 
         public int CreateDriver(DriverGlobalEntity driverGlobalEntity)
