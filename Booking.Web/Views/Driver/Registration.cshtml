@@ -11,40 +11,40 @@
 <!--  ---------------------------------------------------/
 ----  --------------- Driver registeration form --------------------------------------->
 <section>
-    <form asp-action="Registration">
+    <form asp-controller="Driver" asp-action="Registration" method="post">
         <div class="form-group">
-            <label class="form-label">Enter name</label>
-            <input type="text" class="form-control" />
+            <label for="Name" class="form-label">Enter name</label>
+            <input type="text" class="form-control" name="Name" />
         </div>
 
         <div class="form-group">
-            <label class="col-form-label-sm">Enter age</label>
-            <input type="text" class="form-control" />
+            <label for="Age" class="col-form-label-sm">Enter age</label>
+            <input type="text" class="form-control" name="Age" />
         </div>
 
         <div class="form-group">
-            <label>Enter gender</label>
-            <input type="text" class="form-control" />
+            <label for="Gender">Enter gender</label>
+            <input type="text" class="form-control" name="Gender" />
         </div>
 
         <div class="form-group">
-            <label>Enter phone number</label>
-            <input type="text" class="form-control" />
+            <label for="PhoneNumber">Enter phone number</label>
+            <input type="text" class="form-control" name="PhoneNumber" />
         </div>
 
         <div class="form-group">
-            <label>Enter city</label>
-            <input type="text" class="form-control" />
+            <label for="City">Enter city</label>
+            <input type="text" class="form-control" name="City" />
         </div>
 
         <div class="form-group">
-            <label>Upload driving licence</label>
-            <input type="text" class="form-control" />
+            <label for="DrivingLicence">Upload driving licence</label>
+            <input type="text" class="form-control" name="DrivingLicence" />
         </div>
 
         <div class="form-group">
-            <label>Upload image</label>
-            <input type="text" class="form-control" />
+            <label for="ImageUrl">Upload image</label>
+            <input type="text" class="form-control" name="ImageUrl" />
         </div>
 
         <button class="btn btn-sm btn-primary">Register</button>

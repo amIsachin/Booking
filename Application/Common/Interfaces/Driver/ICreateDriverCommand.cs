@@ -1,4 +1,5 @@
 ﻿using Domain.Entities.SystemEntities;
+using System.Threading.Tasks;
 
 namespace Application.Common.Interfaces.Driver
 {
@@ -7,6 +8,6 @@ namespace Application.Common.Interfaces.Driver
     /// </summary>
     public interface ICreateDriverCommand
     {
-        int InsertDriver(DriverSystemEntity driverSystemEntity);
+        Task<int> InsertDriver(DriverSystemEntity driverSystemEntity);
     }
 }

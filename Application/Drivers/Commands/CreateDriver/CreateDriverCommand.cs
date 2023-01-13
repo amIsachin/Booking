@@ -1,6 +1,8 @@
 ﻿using Application.Common.Interfaces.Driver;
+using Application.Common.Logics;
 using Domain.Entities.SystemEntities;
 using Infrastructure.Persistence;
+using System.Threading.Tasks;
 
 namespace Application.Drivers.Commands.CreateDriver
 {
@@ -10,14 +12,42 @@ namespace Application.Drivers.Commands.CreateDriver
     public sealed class CreateDriverCommand : ICreateDriverCommand
     {
         private readonly ApplicationDbContext _driverCommand;
-        public CreateDriverCommand(ApplicationDbContext driverService)
+        public CreateDriverCommand(ApplicationDbContext driverCommand)
         {
-            this._driverCommand = driverService;
+            _driverCommand = driverCommand;
         }
 
-        public int InsertDriver(DriverSystemEntity driverSystemEntity)
+        public async Task<int> InsertDriver(DriverSystemEntity driverSystemEntity)
         {
-            throw new System.NotImplementedException();
+            driverSystemEntity.Created = TimeManagement.Instance.DateTimeNow();
+            driverSystemEntity.CreatedBy = "UnKnown";
+
+            driverSystemEntity.LastModified = TimeManagement.Instance.LastModified();
+            driverSystemEntity.LastModifiedBy = "UnKnown";
+
+            driverSystemEntity.ImageUrl = "Functionality not implemented";
+            driverSystemEntity.DrivingLicence = "Functionality not implemented";
+
+
+            try
+            {
+                await _driverCommand.Drivers.AddAsync(driverSystemEntity);
+                int isInserted = await _driverCommand.SaveChangesAsync();
+
+                if (isInserted > 0)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+            catch (System.Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
