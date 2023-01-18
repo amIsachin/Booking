@@ -7,9 +7,9 @@
     public sealed class DriverDropedRiderSystemEntity
     {
         [System.ComponentModel.DataAnnotations.Key]
-        public uint Droped_ID { get; set; }
-        public uint DriverID { get; set; }
-        public uint RiderID { get; set; }
+        public int Droped_ID { get; set; }
+        public int DriverID { get; set; }
+        public int RiderID { get; set; }
 
         public DriverSystemEntity Driver { get; set; }
         public RiderSystemEntity Rider { get; set; }

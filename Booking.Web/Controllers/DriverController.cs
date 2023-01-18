@@ -1,16 +1,19 @@
 ﻿using Application.Common.Interfaces.Driver;
 using Domain.Entities.SystemEntities;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace Booking.Web.Controllers
 {
     public class DriverController : Controller
     {
+        #region DependencyInjection
         private readonly ICreateDriverCommand _driverCommand;
         public DriverController(ICreateDriverCommand driverCommand)
         {
             this._driverCommand = driverCommand;
-        }
+        } 
+        #endregion
 
         [HttpGet]
         public IActionResult Index()
@@ -25,17 +28,18 @@ namespace Booking.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Registration(DriverSystemEntity driverSystemEntity)
+        public async Task<IActionResult> Registration(DriverSystemEntity driverSystemEntity)
         {
-            _driverCommand.InsertDriver(driverSystemEntity);
+            int isInserted = await _driverCommand.InsertDriver(driverSystemEntity);
 
-            //if (_driverCommand.InsertDriver(driverSystemEntity) > 0)
-            //{
-
-            //}
-
-
-            return View();
+            if (isInserted > 0)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
         }
     }
 }

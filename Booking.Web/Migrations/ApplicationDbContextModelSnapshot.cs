@@ -21,16 +21,16 @@ namespace Booking.Web.Migrations
 
             modelBuilder.Entity("Domain.Entities.SystemEntities.DriverDropedRiderSystemEntity", b =>
                 {
-                    b.Property<long>("Droped_ID")
+                    b.Property<int>("Droped_ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.None);
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
-                    b.Property<long>("DriverID")
-                        .HasColumnType("bigint");
+                    b.Property<int>("DriverID")
+                        .HasColumnType("int");
 
-                    b.Property<long>("RiderID")
-                        .HasColumnType("bigint");
+                    b.Property<int>("RiderID")
+                        .HasColumnType("int");
 
                     b.HasKey("Droped_ID");
 
@@ -43,10 +43,10 @@ namespace Booking.Web.Migrations
 
             modelBuilder.Entity("Domain.Entities.SystemEntities.DriverSystemEntity", b =>
                 {
-                    b.Property<long>("Driver_ID")
+                    b.Property<int>("Driver_ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.None);
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<byte>("Age")
                         .HasColumnType("tinyint");
@@ -88,10 +88,10 @@ namespace Booking.Web.Migrations
 
             modelBuilder.Entity("Domain.Entities.SystemEntities.RiderSystemEntity", b =>
                 {
-                    b.Property<long>("Rider_ID")
+                    b.Property<int>("Rider_ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.None);
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<string>("City")
                         .HasColumnType("nvarchar(max)");

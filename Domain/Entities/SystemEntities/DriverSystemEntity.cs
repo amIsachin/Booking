@@ -11,7 +11,7 @@ namespace Domain.Entities.SystemEntities
     public sealed class DriverSystemEntity : CloneableBaseEntity
     {
         [Key]
-        public uint Driver_ID { get; set; }
+        public int Driver_ID { get; set; }
         public byte Age { get; set; }
         public string DrivingLicence { get; set; }
 
