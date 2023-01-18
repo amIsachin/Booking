@@ -24,7 +24,7 @@ namespace Booking.Web.Controllers
         [HttpGet]
         public IActionResult Registration()
         {
-            return View();
+            return View(new DriverSystemEntity());
         }
 
         [HttpPost]
@@ -38,7 +38,7 @@ namespace Booking.Web.Controllers
             }
             else
             {
-                return View();
+                return View(driverSystemEntity);
             }
         }
     }

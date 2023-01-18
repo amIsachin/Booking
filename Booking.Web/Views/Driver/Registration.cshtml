@@ -1,4 +1,5 @@
-﻿
+﻿@model Domain.Entities.SystemEntities.DriverSystemEntity;
+
 @{
     ViewData["Title"] = "Registration";
     Layout = "~/Views/Shared/_Driver.cshtml";
@@ -14,39 +15,69 @@
     <form asp-controller="Driver" asp-action="Registration" method="post">
         <div class="form-group">
             <label for="Name" class="form-label">Enter name</label>
-            <input type="text" class="form-control" name="Name" />
+            <input type="text" class="form-control" asp-for="Name" />
         </div>
 
         <div class="form-group">
             <label for="Age" class="col-form-label-sm">Enter age</label>
-            <input type="text" class="form-control" name="Age" />
+            <input type="text" class="form-control" asp-for="Age" />
         </div>
 
         <div class="form-group">
             <label for="Gender">Enter gender</label>
-            <input type="text" class="form-control" name="Gender" />
+            <input type="text" class="form-control" asp-for="Gender" />
         </div>
 
         <div class="form-group">
             <label for="PhoneNumber">Enter phone number</label>
-            <input type="text" class="form-control" name="PhoneNumber" />
+            <input type="text" class="form-control" asp-for="PhoneNumber" />
         </div>
 
         <div class="form-group">
             <label for="City">Enter city</label>
-            <input type="text" class="form-control" name="City" />
+            <input type="text" class="form-control" asp-for="City" />
         </div>
 
         <div class="form-group">
             <label for="DrivingLicence">Upload driving licence</label>
-            <input type="text" class="form-control" name="DrivingLicence" />
+            <input type="text" class="form-control" asp-for="DrivingLicence" />
         </div>
 
         <div class="form-group">
             <label for="ImageUrl">Upload image</label>
-            <input type="text" class="form-control" name="ImageUrl" />
+            <input type="file" id="imageButton" class="form-control" asp-for="ImageUrl" />
         </div>
 
         <button class="btn btn-sm btn-primary">Register</button>
     </form>
 </section>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#imageButton').change(function () {
+            var formData = new FormData();
+            var files = this.files;
+            for (var i = 0; i < files.length; i++) {
+                formData.append("Image", files[i]);
+            }
+
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("ImageUpload", "Shared")',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function () {
+                },
+                error: function () {
+                    alert("Error occured during image upload")
+                }
+            });
+
+        });
+
+
+    });  // Here is closed document ready function().
+</script> 
