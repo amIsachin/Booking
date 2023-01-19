@@ -4,8 +4,10 @@ namespace Booking.Web.Controllers
 {
     public class SharedController : Controller
     {
-        public IActionResult Index()
+        [HttpPost]
+        public IActionResult UploadImage()
         {
+            
             return View();
         }
     }

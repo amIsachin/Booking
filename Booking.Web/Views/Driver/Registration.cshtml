@@ -64,8 +64,9 @@
             }
 
             $.ajax({
-                type: 'GET',
-                url: '@Url.Action("ImageUpload", "Shared")',
+                type: 'POST',
+                url: '@Url.Action("UploadImage", "Shared")',
+                dataType: 'JSON',
                 data: formData,
                 processData: false,
                 contentType: false,
