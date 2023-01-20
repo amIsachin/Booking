@@ -64,12 +64,12 @@
             }
 
             $.ajax({
-                type: 'POST',
                 url: '@Url.Action("UploadImage", "Shared")',
+                type: 'POST',
                 dataType: 'JSON',
-                data: formData,
-                processData: false,
                 contentType: false,
+                processData: false,
+                data: formData,
                 success: function () {
                 },
                 error: function () {
